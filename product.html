@@ -48,10 +48,6 @@
                 Premium Anti-Yellow Transparent Case
             </p>
 
-            <div class="rating">
-                ★★★★★ <span>4.9 / 5</span>
-            </div>
-
             <div class="price">
 
             <span class="current">
@@ -94,53 +90,65 @@
 
     <div class="section-title">
         <h2>Customer Reviews</h2>
-        <p>See what our customers say about ClearGuard cases.</p>
+        <p>Real reviews from ClearGuard customers.</p>
     </div>
 
-    <div class="review-grid">
+    <div class="review-summary">
 
-        <div class="review-card">
+        <h3>
+            <span id="averageRating">0.0</span>
+            <span class="big-stars">★★★★★</span>
+        </h3>
 
-            <div class="stars">★★★★★</div>
+        <p>
+            Based on
+            <span id="reviewCount">0</span>
+            reviews
+        </p>
 
-            <h3>Rahul S.</h3>
+    </div>
 
-            <p>
-                Crystal clear quality. Still looks new after months of
-                daily use. Highly recommended.
-            </p>
+    <div class="review-form">
 
-        </div>
+        <h3>Write a Review</h3>
 
-        <div class="review-card">
+        <div class="star-picker">
 
-            <div class="stars">★★★★★</div>
-
-            <h3>Sneha M.</h3>
-
-            <p>
-                Excellent fit and premium feel. Buttons are tactile and
-                camera protection is excellent.
-            </p>
-
-        </div>
-
-        <div class="review-card">
-
-            <div class="stars">★★★★☆</div>
-
-            <h3>Akhil K.</h3>
-
-            <p>
-                Looks premium and doesn't yellow easily. Definitely worth
-                the price.
-            </p>
+            <span class="star" data-rating="1">★</span>
+            <span class="star" data-rating="2">★</span>
+            <span class="star" data-rating="3">★</span>
+            <span class="star" data-rating="4">★</span>
+            <span class="star" data-rating="5">★</span>
 
         </div>
+
+        <input
+            id="reviewName"
+            type="text"
+            placeholder="Your Name"
+        >
+
+        <textarea
+            id="reviewText"
+            rows="5"
+            placeholder="Share your experience..."
+        ></textarea>
+
+        <button id="submitReview">
+            Submit Review
+        </button>
+
+    </div>
+
+    <div
+        id="reviewsContainer"
+        class="review-grid"
+    >
 
     </div>
 
 </section>
+
 
 
 <!-- Related Products -->
@@ -237,9 +245,9 @@
 
 </footer>
 
-
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="products.js"></script>
-<script src="product.js"></script>
+<script src="product-new.js"></script>
 
 </body>
 </html>
