@@ -1,11 +1,4 @@
-console.log("PRODUCT-NEW.JS LOADED", performance.now());
-const SUPABASE_URL = "https://vghwfdapxvilpghfcber.supabase.co";
-const SUPABASE_KEY = "sb_publishable_urQuFNHD5k8TZbIWJrVQsQ__Li-YYej";
-
-const db = window.supabase.createClient(
-    SUPABASE_URL,
-    SUPABASE_KEY
-);
+const db = window.db;
 let selectedRating = 5;
 
 const stars = document.querySelectorAll(".star");
@@ -83,7 +76,11 @@ if(model){
 
 document
 .getElementById("addToCartBtn")
-.addEventListener("click", () => {
+.addEventListener("click", async () => {
+
+    if(!(await requireLogin())){
+        return;
+    }
 
     const product = {
     brand:currentPhone.brand,
@@ -347,7 +344,13 @@ if (!data || data.length === 0) {
 
 loadReviews();
 
-document.getElementById("buyNowBtn").addEventListener("click", () => {
+document
+.getElementById("buyNowBtn")
+.addEventListener("click", async () => {
+
+    if(!(await requireLogin())){
+        return;
+    }
 
     const product = {
         brand: currentPhone.brand,

@@ -151,3 +151,39 @@ document.addEventListener("keydown",(e)=>{
     }
 
 });
+document
+.getElementById("logoutBtn")
+.addEventListener("click", async () => {
+
+    const { error } = await authDb.auth.signOut();
+
+    if(error){
+        alert(error.message);
+        return;
+    }
+
+    localStorage.removeItem("cart");
+
+    const toast =
+    document.getElementById("toast");
+
+    if(toast){
+
+        toast.textContent =
+        "✔ Logged out successfully.";
+
+        toast.classList.add("show");
+
+        setTimeout(() => {
+
+            window.location.href = "index.html";
+
+        }, 2000);
+
+    }else{
+
+        window.location.href = "index.html";
+
+    }
+
+});

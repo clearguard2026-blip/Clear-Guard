@@ -418,3 +418,67 @@ footer h3{
     }
 
 }
+.logout-btn{
+
+    border:none;
+
+    background:#ef4444;
+
+    color:white;
+
+    padding:10px 20px;
+
+    border-radius:25px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.logout-btn:hover{
+
+    background:#dc2626;
+
+}
+
+.toast{
+
+    position:fixed;
+
+    top:25px;
+    right:25px;
+
+    background:#22c55e;
+
+    color:white;
+
+    padding:16px 24px;
+
+    border-radius:14px;
+
+    font-weight:600;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.15);
+
+    opacity:0;
+
+    transform:translateY(-20px);
+
+    transition:.35s;
+
+    z-index:99999;
+
+    pointer-events:none;
+
+}
+
+.toast.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}

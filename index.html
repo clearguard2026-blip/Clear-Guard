@@ -21,11 +21,20 @@
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="#brands">Brands</a></li>
-            <li><a href="#">Warranty</a></li>
+            <li><a href="order.html">Orders</a></li>
             <li><a href="#">Contact</a></li>
+
+
+                
+
+
         </ul>
 
         <div class="nav-actions">
+    <button id="logoutBtn" class="logout-btn">
+         Logout
+    </button>
+
 
     <a href="#search-section" class="shop-btn">
         Search
@@ -225,7 +234,14 @@ onclick="window.location.href='brand.html?brand=motorola'">
         <p>India's Anti-Yellow Case Store</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="auth.js"></script>
     <script src="script.js"></script>
+
+
+    <div id="toast" class="toast">
+        Logged out successfully.
+    </div>
 
 </body>
 </html>
