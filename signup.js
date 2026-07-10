@@ -32,7 +32,7 @@ document
 
     });
 
-    if (error) {
+    if(error){
 
         alert(error.message);
 
@@ -43,7 +43,10 @@ document
 
     }
 
-    window.location.href =
-        `verify-email.html?email=${encodeURIComponent(email)}`;
+    alert(
+        "Verification email sent!\n\nPlease check your inbox and verify your email before logging in."
+    );
+
+    window.location.href = "login.html";
 
 });
