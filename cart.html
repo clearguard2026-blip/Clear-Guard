@@ -2,51 +2,77 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
     <title>Cart - ClearGuard</title>
-    <link rel="icon" type="image/png" href="images/logo.png" style="border-radius: 10%  ;" >
+
+    <link rel="icon"
+          type="image/png"
+          href="images/logo.png">
+
     <link rel="stylesheet" href="cart.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
+
 <body>
 
-    <nav class="navbar">
+<!-- ================= NAVBAR ================= -->
 
-        <a href="index.html" class="back-btn">
-            ← Home
-        </a>
+<nav class="navbar">
 
-        <div class="logo">
-            ClearGuard
-        </div>
+    <a href="index.html" class="back-btn">
+        ← Home
+    </a>
 
-        <div></div>
+    <div class="logo">
+        ClearGuard
+    </div>
 
-    </nav>
+    <div class="nav-space"></div>
 
-    <section class="cart-container">
+</nav>
 
-        <section class="cart-container">
+<!-- ================= CART ================= -->
+
+<section class="cart-container">
 
     <h1>Your Cart</h1>
 
+    <!-- Filled automatically by cart.js -->
     <div id="cartItems"></div>
 
+    <!-- Summary -->
     <div class="cart-summary">
 
         <h2>
-            Total: ₹<span id="totalPrice">0</span>
+            Total :
+            ₹<span id="totalPrice">0</span>
         </h2>
 
         <div class="cart-actions">
 
-            <button id="clearCartBtn" class="clear-btn">
+            <button
+                id="clearCartBtn"
+                class="clear-btn">
+
+                <i class="fa-solid fa-trash"></i>
                 Clear Cart
+
             </button>
 
-            <button id="checkoutBtn" class="checkout-btn">
+            <button
+                id="checkoutBtn"
+                class="checkout-btn">
+
+                <i class="fa-solid fa-credit-card"></i>
                 Checkout
+
             </button>
 
         </div>
@@ -55,9 +81,73 @@
 
 </section>
 
-    </section>
+<!-- ================= FEATURES ================= -->
 
-    <script src="cart.js"></script>
+<section class="trust-section">
+
+    <div class="trust-grid">
+
+        <div class="trust-card">
+
+            <i class="fa-solid fa-truck-fast"></i>
+
+            <h3>Free Delivery</h3>
+
+            <p>Fast delivery all across India.</p>
+
+        </div>
+
+        <div class="trust-card">
+
+            <i class="fa-solid fa-shield-halved"></i>
+
+            <h3>1 Year Warranty</h3>
+
+            <p>Protection against yellowing.</p>
+
+        </div>
+
+        <div class="trust-card">
+
+            <i class="fa-solid fa-arrow-rotate-left"></i>
+
+            <h3>Easy Returns</h3>
+
+            <p>7-Day replacement policy.</p>
+
+        </div>
+
+        <div class="trust-card">
+
+            <i class="fa-solid fa-lock"></i>
+
+            <h3>Secure Payment</h3>
+
+            <p>100% Safe checkout experience.</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <h2>ClearGuard</h2>
+
+    <p>
+        Premium Anti-Yellow Transparent Cases
+    </p>
+
+    <p>
+        Designed to stay crystal clear for longer.
+    </p>
+
+</footer>
+
+<script src="cart.js"></script>
 
 </body>
 </html>

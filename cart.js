@@ -50,8 +50,8 @@ if(cartItems.length === 0){
 
             <p>Premium Anti-Yellow Case</p>
 
-            <p>
-                ₹${item.price} × ${item.quantity}
+            <p class="price">
+                ₹${item.price}
             </p>
 
             <div class="quantity-controls">
@@ -71,6 +71,9 @@ if(cartItems.length === 0){
                 </button>
 
             </div>
+            <p class="subtotal">
+                Subtotal: ₹${item.price * item.quantity}
+            </p>
 
             <button
                 class="remove-btn"
