@@ -11,6 +11,7 @@ const authDb = window.supabase.createClient(
 
 // Make it available everywhere
 window.authDb = authDb;
+window.db = authDb;
 
 async function getCurrentUser(){
 
