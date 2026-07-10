@@ -4,10 +4,10 @@ const phones = [
 
 {
     brand:"samsung",
-    model:"galaxy-s21",
-    name:"Samsung Galaxy S21",
+    model:"galaxy-s21-plus",
+    name:"Samsung Galaxy S21 Plus",
     image:"products/samsung/s21.png",
-    price:499
+    price:549
 },
 
 {

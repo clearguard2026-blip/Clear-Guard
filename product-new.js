@@ -344,4 +344,34 @@ if (!data || data.length === 0) {
     });
 
 }
+
 loadReviews();
+
+document.getElementById("buyNowBtn").addEventListener("click", () => {
+
+    const product = {
+        brand: currentPhone.brand,
+        model: currentPhone.model,
+        name: currentPhone.name,
+        image: currentPhone.image,
+        price: currentPhone.price,
+        quantity: 1
+    };
+
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    const existing = cart.find(item =>
+        item.brand === product.brand &&
+        item.model === product.model
+    );
+
+    if (existing) {
+        existing.quantity += 1;
+    } else {
+        cart.push(product);
+    }
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    window.location.href = "cart.html";
+});
