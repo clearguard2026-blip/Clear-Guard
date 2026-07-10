@@ -1,0 +1,77 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+img{
+    pointer-events:none;
+    -webkit-user-drag:none;
+}
+.success-container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.success-card{
+    background:white;
+    padding:50px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 15px 35px rgba(0,0,0,0.08);
+    max-width:600px;
+    width:90%;
+}
+
+.checkmark{
+    width:90px;
+    height:90px;
+    margin:auto;
+    border-radius:50%;
+    background:#22c55e;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:40px;
+    margin-bottom:25px;
+}
+
+.success-card h1{
+    margin-bottom:15px;
+}
+
+.success-card p{
+    color:#666;
+    margin-bottom:25px;
+}
+
+.order-id{
+    background:#f5f7fa;
+    padding:15px;
+    border-radius:12px;
+    font-weight:600;
+    margin-bottom:30px;
+}
+
+.home-btn{
+    display:inline-block;
+    text-decoration:none;
+    background:#0071e3;
+    color:white;
+    padding:15px 30px;
+    border-radius:35px;
+    font-weight:600;
+}

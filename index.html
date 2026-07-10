@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>ClearGuard - Anti Yellow Cases</title>
+    <link rel="icon" type="image/png" href="images/logo.png" style="border-radius: 10%  ;" >
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">ClearGuard</div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#brands">Brands</a></li>
+            <li><a href="#">Warranty</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+
+    <a href="#search-section" class="shop-btn">
+        Search
+    </a>
+
+    <a href="cart.html" class="cart-link">
+    <i class="fa-solid fa-cart-shopping"></i>
+    <span id="cartCount">0</span>
+</a>
+
+</div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+
+        <div class="hero-text">
+            <h1>Crystal Clear.<br>Anti-Yellow Cases.</h1>
+
+            <p>
+                Premium transparent cases built to stay clear longer.
+                Protection without hiding your phone.
+            </p>
+
+            <a href="#brands" class="hero-btn">
+                Explore Collection
+            </a>
+        </div>
+
+        <div class="hero-image">
+            <img src="images/s24ultrahome.webp"
+                 alt="Phone">
+        </div>
+
+    </section>
+
+    <!-- SEARCH SECTION -->
+
+<section id="search-section" class="search-section">
+
+    <h2>Find Your Phone Case</h2>
+
+    <div class="search-box">
+
+        <input
+            type="text"
+            id="phoneSearch"
+            placeholder="Search your phone model..."
+        >
+
+        <div id="suggestions"></div>
+
+    </div>
+
+</section>
+
+
+<!-- SHOP BY BRAND -->
+
+<section id="brands" class="brands">
+
+    <h2>Shop By Brand</h2>
+
+    <div class="brand-grid">
+
+<div class="brand-card"
+onclick="window.location.href='brand.html?brand=samsung'">
+    <img src="images/samsung.png" alt="Samsung">
+</div>
+
+<div class="brand-card"
+onclick="window.location.href='brand.html?brand=pixel'">
+    <img src="images/pixel.jpg" alt="Google Pixel">
+</div>
+
+<div class="brand-card"
+onclick="window.location.href='brand.html?brand=apple'">
+    <img src="images/apple.png" alt="Apple">
+</div>
+
+<div class="brand-card"
+onclick="window.location.href='brand.html?brand=oneplus'">
+    <img src="images/oneplus" alt="OnePlus">
+</div>
+
+<div class="brand-card"
+onclick="window.location.href='brand.html?brand=Nothing'">
+    <img src="images/nothing.png" alt="Nothing">
+</div>
+
+<div class="brand-card"
+onclick="window.location.href='brand.html?brand=xiaomi'">
+    <img src="images/xiaomi.png" alt="Xiaomi">
+</div>
+
+<div class="brand-card"
+onclick="window.location.href='brand.html?brand=vivo'">
+    <img src="images/vivo.png" alt="Vivo">
+</div>
+
+<div class="brand-card"
+onclick="window.location.href='brand.html?brand=oppo'">
+    <img src="images/oppo.png" alt="Oppo">
+</div>
+
+<div class="brand-card"
+onclick="window.location.href='brand.html?brand=realme'">
+    <img src="images/realme.png" alt="Realme">
+</div>
+
+<div class="brand-card"
+onclick="window.location.href='brand.html?brand=motorola'">
+    <img src="images/motorola.png" alt="Motorola">
+</div>
+    </div>
+
+</section>
+
+<section class="popular-models">
+
+    <h2>Popular Models</h2>
+
+    <div class="model-grid">
+
+        <div class="model-card">Galaxy S25 Ultra
+            <a href="brand=samsung&model=galaxy-s25-ultra"></a>
+        </div>
+        <div class="model-card">Galaxy S24 Ultra</div>
+        <div class="model-card">iPhone 16 Pro Max</div>
+        <div class="model-card">iPhone 15 Pro Max</div>
+        <div class="model-card">OnePlus 13</div>
+        <div class="model-card">Nothing Phone (3a)</div>
+
+    </div>
+
+</section>
+
+    <!-- Carousel -->
+
+    <section class="carousel-container">
+
+        <div class="carousel">
+
+            <div class="slide active">
+                <img src="images/cor1.png">
+            </div>
+
+            <div class="slide">
+                <img src="images/cor2.png">
+            </div>
+
+            <div class="slide">
+                <img src="images/cor3.png">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Featured Products -->
+
+    <section class="featured">
+
+        <h2>Best Sellers</h2>
+
+        <div class="product-grid">
+
+            <div class="product-card">
+                <img src="images/samsungs24u.jpg">
+                <h3>Samsung S26 Ultra</h3>
+                <p>Anti-Yellow Transparent Case</p>
+                <span>₹549</span>
+            </div>
+
+            <div class="product-card">
+                <img src="images/16prou.webp">
+                <h3>iPhone 16 Pro</h3>
+                <p>Crystal Clear Protection</p>
+                <span>₹549</span>
+            </div>
+
+            <div class="product-card">
+                <img src="images/1+ 13.webp">
+                <h3>OnePlus 13</h3>
+                <p>Military Grade Clear Case</p>
+                <span>₹449</span>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+        <h3>ClearGuard</h3>
+        <p>India's Anti-Yellow Case Store</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

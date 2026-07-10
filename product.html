@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>ClearGuard Product</title>
+    <link rel="icon" type="image/png" href="images/logo.png" style="border-radius: 10%  ;" >
+    <link rel="stylesheet" href="product.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+
+    <a href="javascript:history.back()" class="back-btn">
+        ← Back
+    </a>
+
+    <div class="logo">
+        ClearGuard
+    </div>
+
+    <a href="cart.html" class="cart-link"><i class="fa-solid fa-cart-shopping"></i>
+     <span id="cartCount">0</span>
+</a>
+
+</nav>
+
+    <section class="product-container">
+
+        <div class="product-image">
+
+            <img id="mainImage"
+            src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800"
+            alt="Product">
+
+        </div>
+
+        <div class="product-details">
+
+            <h1 id="productTitle">
+                Samsung Galaxy S24 Ultra
+            </h1>
+
+            <p class="subtitle">
+                Premium Anti-Yellow Transparent Case
+            </p>
+
+            <div class="rating">
+                ★★★★★ <span>4.9 / 5</span>
+            </div>
+
+            <div class="price">
+
+            <span class="current">
+                ₹<span id="productPrice"></span>
+            </span>
+
+            <span class="old">
+                ₹799
+            </span>
+
+            <span class="discount">
+                25% OFF
+            </span>
+
+</div>
+
+            <ul class="features">
+                <li>✓ Anti-Yellow Technology</li>
+                <li>✓ Camera Protection</li>
+                <li>✓ Shock Resistant</li>
+                <li>✓ Wireless Charging Compatible</li>
+            </ul>
+
+            <div class="buttons">
+                <button id="addToCartBtn" class="cart-btn">
+                     Add To Cart
+                </button>
+
+                <button class="buy-btn">
+                    Buy Now
+                </button>     
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Reviews -->
+
+<section class="reviews">
+
+    <div class="section-title">
+        <h2>Customer Reviews</h2>
+        <p>See what our customers say about ClearGuard cases.</p>
+    </div>
+
+    <div class="review-grid">
+
+        <div class="review-card">
+
+            <div class="stars">★★★★★</div>
+
+            <h3>Rahul S.</h3>
+
+            <p>
+                Crystal clear quality. Still looks new after months of
+                daily use. Highly recommended.
+            </p>
+
+        </div>
+
+        <div class="review-card">
+
+            <div class="stars">★★★★★</div>
+
+            <h3>Sneha M.</h3>
+
+            <p>
+                Excellent fit and premium feel. Buttons are tactile and
+                camera protection is excellent.
+            </p>
+
+        </div>
+
+        <div class="review-card">
+
+            <div class="stars">★★★★☆</div>
+
+            <h3>Akhil K.</h3>
+
+            <p>
+                Looks premium and doesn't yellow easily. Definitely worth
+                the price.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Related Products -->
+
+<section class="related-products">
+
+    <div class="section-title">
+        <h2>You May Also Like</h2>
+        <p>Explore other ClearGuard cases for your favourite devices.</p>
+    </div>
+
+    <div id="relatedGrid" class="related-grid">
+
+        <!-- Filled automatically by product.js -->
+
+    </div>
+
+</section>
+
+
+<!-- Trust Section -->
+
+<section class="trust-section">
+    <div class="section-title">
+        <h2>Our Services</h2>
+    </div>
+
+    <div class="trust-grid">
+
+        <div class="trust-card">
+
+            <div class="trust-icon">
+                🚚
+            </div>
+
+            <h3>Free Delivery</h3>
+
+            <p>Fast shipping across India.</p>
+
+        </div>
+
+        <div class="trust-card">
+
+            <div class="trust-icon">
+                🛡
+            </div>
+
+            <h3>1 Year Warranty</h3>
+
+            <p>Coverage against yellowing.</p>
+
+        </div>
+
+        <div class="trust-card">
+
+            <div class="trust-icon">
+                🔄
+            </div>
+
+            <h3>Easy Returns</h3>
+
+            <p>7-Day hassle-free replacement.</p>
+
+        </div>
+
+        <div class="trust-card">
+
+            <div class="trust-icon">
+                🔒
+            </div>
+
+            <h3>Secure Payments</h3>
+
+            <p>100% safe checkout with Razorpay.</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer class="footer">
+
+    <h2>ClearGuard</h2>
+
+    <p>
+        Premium Anti-Yellow Transparent Mobile Cases
+    </p>
+
+    <p>
+        Designed to stay crystal clear for longer.
+    </p>
+
+</footer>
+
+
+<script src="products.js"></script>
+<script src="product.js"></script>
+
+</body>
+</html>

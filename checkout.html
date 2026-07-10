@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - ClearGuard</title>
+
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="icon" type="image/png" href="images/logo.png" style="border-radius: 10%  ;" >
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+
+        <a href="cart.html" class="back-btn">
+            ← Back
+        </a>
+
+        <div class="logo">
+            ClearGuard
+        </div>
+
+        <div></div>
+
+    </nav>
+
+    <section class="checkout-container">
+
+        <h1>Checkout</h1>
+
+        <div class="checkout-grid">
+
+            <div class="checkout-form">
+
+                <h2>Contact Information</h2>
+
+                <input type="text" id="fullName" placeholder="Full Name" required>
+
+                <input type="tel" id="phone" placeholder="Phone Number" required>
+
+                <input type="email" id="email" placeholder="Email Address" required>
+
+                <input type="text" id="address" placeholder="Address" required>
+
+                <input type="text" id="city" placeholder="City" required>
+
+                <input type="text" id="state" placeholder="State" required>
+
+                <input type="text" id="pincode" placeholder="Pincode" required>
+
+            </div>
+
+            <div class="order-summary">
+
+                <h2>Order Summary</h2>
+
+                <div id="orderItems"></div>
+
+                <h3>
+                    Total: ₹<span id="totalPrice">0</span>
+                </h3>
+
+                <button id="placeOrderBtn">
+                    Place Order
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="checkout.js"></script>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</body>
+</html>
